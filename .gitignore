@@ -1,0 +1,34 @@
+# --- 1. Python Cache (Wajib) ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- 2. Virtual Environment ---
+# Tanda bintang (*) agar mendeteksi .venv310, .venv, env, dll.
+.venv*/
+venv/
+env/
+ENV/
+
+# --- 3. IDE Settings (PyCharm) ---
+.idea/
+.vscode/
+*.swp
+
+# --- 4. Video & Media Besar ---
+# GitHub menolak file >100MB. Video sampel sebaiknya di-ignore.
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# --- 5. File Hasil Generate (Output) ---
+# Agar report PDF hasil run tidak mengotori repo
+Outcome_Report.pdf
+*.pdf
+*.log
+
+# --- 6. Model AI (Opsional) ---
+# Jika file .pt kamu ukurannya >100MB, wajib uncomment baris di bawah:
+# *.pt
+# *.p
