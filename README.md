@@ -13,6 +13,35 @@ This project integrates state-of-the-art Computer Vision models (**YOLOv8**) wit
 
 ---
 
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+* **Python 3.10+** (Recommended: 3.10 or 3.11)
+* **Git** (for cloning the repository)
+* **NVIDIA CUDA** (Optional, but recommended for GPU acceleration)
+* **Telegram Bot** (To enable the auto-report feature, you must configure your Telegram Bot credentials in main.py)
+* **Video Sample** (To enable the auto-report feature, you must configure your Telegram Bot credentials in main.py)
+
+---
+
+## 🚀 Configuration (Telegram Bot)
+
+To enable the auto-report feature, you must configure your Telegram Bot credentials in main.py:
+* **Open Telegram and search for @BotFather.**
+* **Create a new bot with /newbot to get your API Token.**
+* **Get your Chat ID (Send a message to your bot, then check** (https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates)
+* **Open main.py and update the configuration section**
+
+---
+
+## 🎮 Dashboard Controls
+
+* **Play/Stop Button** (Pauses or Resumes the video processing threads)
+* **Print PDF Outcome** (Manually generates a PDF report saved locally in the project folder)
+* **Auto-Report Countdown** (A visual timer indicating when the next report will be sent to Telegram)
+
+---
+
 ## ✨ Key Features
 
 ### 1. 📹 Real-Time Monitoring
