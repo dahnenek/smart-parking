@@ -33,7 +33,7 @@ Before you begin, ensure you have the following installed:
 To enable the auto-report feature, you must configure your Telegram Bot credentials in main.py:
 * **Open Telegram and search for @BotFather.**
 * **Create a new bot with /newbot to get your API Token.**
-* **Get your Chat ID (Send a message to your bot, then check** [ https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates ]
+* **Get your Chat ID (Send a message to your bot, then check)** [ https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates ]
 * **Open main.py and update the configuration section**
 
 ---
@@ -94,6 +94,8 @@ Project-Folder/
 └── sort/             # SORT Tracking Algorithm
 ```
 
+---
+
 ## ⚙️ Installation
 
 ### 1. Clone the Repositoryg
@@ -120,18 +122,27 @@ source venv/bin/activate
 pip install ultralytics opencv-python PyQt6 qtawesome requests filterpy torch "numpy<2.0"
 ```
 
+### 4. Sample Video Placement
+```
+Project-Folder/
+│
+├── samples/          # Put the folder samples here from drive
+├── Parking Lot/      # Mask images & parking utilities
+├── Plate Numbers/    # Just put "sample.mp4" video here from "sample video for "Plate Numbers" folder
+```
+
+---
+
 ## 🚀 Configuration (Telegram Bot)
 To enable the auto-report feature, you must configure your Telegram Bot credentials in ```main.py```:
 
-### 1. Open Telegram and search for @BotFather
+1. Open Telegram and search for @BotFather
 
-### 2. Create a new bot with /newbot to get your API Token 
-``` /newbot ```
+2. Create a new bot with /newbot to get your API Token ```/newbot ```
 
-### 3. Get your Chat ID (Send a message to your bot, then check
-```https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates```
+3. Get your Chat ID (Send a message to your bot, then check) ```https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates```
 
-### 4. Open [main.py] and update the configuration section:
+4. Open ```main.py``` and update the configuration section:
 ```
 # main.py (Inside MainWindow class)
 self.BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE" 
