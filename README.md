@@ -1,9 +1,13 @@
+# 🚗 Computer Vision Smart Plate & Parking Detection
+
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![YOLOv8](https://img.shields.io/badge/YOLO-v8-green?style=for-the-badge)
 ![PyQt6](https://img.shields.io/badge/GUI-PyQt6-orange?style=for-the-badge&logo=qt&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
 > **A dual-stream computer vision system designed to monitor parking lot occupancy and detect vehicle license plates simultaneously.**
+
+<img width="1594" height="1003" alt="Screenshot 2025-12-07 190213" src="https://github.com/user-attachments/assets/a55541ee-404c-4c79-a838-1bc514a382bc" />
 
 ---
 
@@ -20,7 +24,7 @@ Before you begin, ensure you have the following installed:
 * **Git** (for cloning the repository)
 * **NVIDIA CUDA** (Optional, but recommended for GPU acceleration)
 * **Telegram Bot** (To enable the auto-report feature, you must configure your Telegram Bot credentials in main.py)
-* **Video Sample** (https://drive.google.com/drive/folders/1UG43fHYF7h3UN9WNLkR2-0F8osB2hVZe?usp=sharing)
+* **Video Sample**: https://drive.google.com/drive/folders/1UG43fHYF7h3UN9WNLkR2-0F8osB2hVZe?usp=sharing
 
 ---
 
@@ -29,7 +33,7 @@ Before you begin, ensure you have the following installed:
 To enable the auto-report feature, you must configure your Telegram Bot credentials in main.py:
 * **Open Telegram and search for @BotFather.**
 * **Create a new bot with /newbot to get your API Token.**
-* **Get your Chat ID (Send a message to your bot, then check** (https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates)
+* **Get your Chat ID (Send a message to your bot, then check** [ https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates ]
 * **Open main.py and update the configuration section**
 
 ---
@@ -88,3 +92,49 @@ Project-Folder/
 ├── Parking Lot/      # Mask images & parking utilities
 ├── Plate Numbers/    # License plate utilities
 └── sort/             # SORT Tracking Algorithm
+```
+
+## ⚙️ Installation
+
+### 1. Clone the Repositoryg
+```
+git clone https://github.com/dahnenek/smart-parking.git
+cd smart-parking-cv
+```
+
+### 2. Set up Virtual Environment
+```
+# Create virtual environment
+python -m venv venv
+
+# Activate (Windows)
+venv\Scripts\activate
+
+# Activate (Mac/Linux)
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+* **⚠️ Important:** We strictly use numpy<2.0 to ensure compatibility with OpenCV and Ultralytics.
+```
+pip install ultralytics opencv-python PyQt6 qtawesome requests filterpy torch "numpy<2.0"
+```
+
+## 🚀 Configuration (Telegram Bot)
+To enable the auto-report feature, you must configure your Telegram Bot credentials in ```main.py```:
+
+### 1. Open Telegram and search for @BotFather
+
+### 2. Create a new bot with /newbot to get your API Token 
+``` /newbot ```
+
+### 3. Get your Chat ID (Send a message to your bot, then check
+```https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates```
+
+### 4. Open [main.py] and update the configuration section:
+```
+# main.py (Inside MainWindow class)
+self.BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE" 
+self.CHAT_ID = "YOUR_CHAT_ID_HERE"             
+self.REPORT_INTERVAL = 10  # Set auto-report interval in seconds
+```
