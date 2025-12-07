@@ -20,7 +20,7 @@ Before you begin, ensure you have the following installed:
 * **Git** (for cloning the repository)
 * **NVIDIA CUDA** (Optional, but recommended for GPU acceleration)
 * **Telegram Bot** (To enable the auto-report feature, you must configure your Telegram Bot credentials in main.py)
-* **Video Sample** (To enable the auto-report feature, you must configure your Telegram Bot credentials in main.py)
+* **Video Sample** (https://drive.google.com/drive/folders/1UG43fHYF7h3UN9WNLkR2-0F8osB2hVZe?usp=sharing))
 
 ---
 
