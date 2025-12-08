@@ -149,3 +149,11 @@ self.BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
 self.CHAT_ID = "YOUR_CHAT_ID_HERE"             
 self.REPORT_INTERVAL = 10  # Set auto-report interval in seconds
 ```
+
+---
+
+## 🤝 Reference
+
+1. License plate detector: ```https://youtu.be/fyJB1t0o0ms?si=ZwqZWwkuwuitJRbm``` 
+
+2. Smart parking spot: ```https://youtu.be/F-884J2mnOY?si=S2L8EIzgvg7azst-```
